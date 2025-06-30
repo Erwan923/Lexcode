@@ -1,8 +1,12 @@
-<div align="center">
-  <img src="assets/images/noun-anime-5257669.svg" width="200" alt="Lexcode Logo"/>
-</div>
+<p align="center">
+  <img src="logo.png" width="200" alt="Lexcode Logo"/>
+</p>
 
-<h1 align="center"><span style="color: #FF0000; font-family: 'Blender Pro', 'Orbitron', sans-serif; text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000; letter-spacing: 3px; font-weight: bold;">LEXCODE</span></h1>
+<h1 align="center">
+  <span style="color: #FF0000; font-family: 'Blender Pro', 'Orbitron', sans-serif; text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000; letter-spacing: 3px; font-weight: bold;">
+    LEXCODE
+  </span>
+</h1>
 
 <div align="center">
   <strong>Automatisation de scans de sécurité avec Ansible</strong><br>
@@ -10,6 +14,7 @@
   <img src="https://img.shields.io/badge/license-MIT-green.svg"/>
   <img src="https://img.shields.io/badge/security-scanning-red.svg"/>
 </div>
+
 
 ## À propos
 Lexcode automatise les scans de sécurité en orchestrant des outils de scans de vulnérabilités via Ansible, avec génération de rapports intelligents.
