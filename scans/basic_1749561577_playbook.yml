@@ -1,0 +1,26 @@
+- hosts: localhost
+  tasks:
+  - command: nmap -sV -sC  127.0.0.1 -oX /home/r3v4n/github-projects/Scansible/reports/xml_reports/scan_report_1749561577.xml
+    name: 'Running: Scan standard sans Vulners'
+    tags:
+    - version
+    - default
+    - discovery
+  - command: nmap -sV --script vulners  127.0.0.1 -oX /home/r3v4n/github-projects/Scansible/reports/xml_reports/scan_report_1749561577.xml
+    name: 'Running: Scan Vulners basique'
+    tags:
+    - vulners
+    - cve
+    - basic
+  - command: nmap -F --script vulners  127.0.0.1 -oX /home/r3v4n/github-projects/Scansible/reports/xml_reports/scan_report_1749561577.xml
+    name: 'Running: Scan rapide avec Vulners'
+    tags:
+    - fast
+    - vulners
+    - quick
+  - command: nmap -sV --script vulners --script-args mincvss=5.0  127.0.0.1 -oX /home/r3v4n/github-projects/Scansible/reports/xml_reports/scan_report_1749561577.xml
+    name: 'Running: Scan avec score CVSS minimum'
+    tags:
+    - cvss
+    - filter
+    - critical
